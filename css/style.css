@@ -1,13 +1,15 @@
-/********** Template CSS **********/
+
 :root {
-    --primary: rgb(204, 46, 46);
+    --primary: rgb(245, 198, 112);
     --light: #F1F8FF;
     --dark: #A10708;
 }
-body{
-    /* background-color: rgb(204, 46, 46);; */
-    /* color: whitesmoke; */
+.card-img-top{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
+
+
 
 .ff-secondary {
     font-family: 'Pacifico', cursive;
@@ -51,8 +53,9 @@ body{
     font-weight: 500;
     text-transform: uppercase;
     transition: .5s;
-    border-radius: 100px;
+    border-radius: 30px;
     background-color: #A10708;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .btn.btn-primary,
@@ -465,9 +468,10 @@ body{
     background-color: #A10708;;
 }
 .marquee{
-    font-size: 30px;
-    color: orange;
-    font-weight: 900;    font-family: Playwrite AU SA;
+    font-size: 55px;
+    color: #f7e668;
+    font-weight: 900;    
+    font-family: 'Bebas Neue';
 }
 .footer .btn.btn-link::before {
     position: relative;
@@ -517,16 +521,52 @@ body{
 }
 
 .carousel-control-prev, .carousel-control-next {
-	height: 44px;
+	height: 64px;
 	width: 40px;
 	background: #7ac400;	
-	margin: auto 0;
+	margin-top: 86px;
 	border-radius: 4px;
 	opacity: 0.8;
 }
 
-
-
+.stickyy {
+    
+    position: sticky;
+    top: 880px;
+    left: 00px;
+    align-self: flex-start; /* Ensures it stays at the top */
+    margin: 0;
+    padding: 0;
+    
+    /* Ensures it spans the full height of the viewport */
+}
+span img:first-of-type {
+    /* Your CSS styles here */
+    position: absolute;/* Example style */
+    top: -790px;
+    cursor: pointer;
+    margin-top: 18px;
+    transform: rotate(180deg); 
+  }
+  span img:nth-of-type(2) {
+    position: absolute;/* Example style */
+    top: -660px;
+    cursor: pointer;
+    margin-top: 18px;
+    transform: rotate(180deg); 
+  }
+  span img:nth-of-type(3) {
+    position: absolute;
+    top: -530px;
+    cursor: pointer;
+    margin-top: 18px;
+    transform: rotate(180deg); 
+  }
+ 
+.right-stick{
+    border: 1px solid blue;
+    float: right;
+}
 
 .contact-form{
     background: #fff;
